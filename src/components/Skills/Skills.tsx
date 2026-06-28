@@ -1,3 +1,4 @@
+import "./Skills.css";
 import {
   SiReact,
   SiTypescript,
@@ -18,16 +19,17 @@ const skills = [
 
 export function Skills() {
   return (
-    <div className="flex flex-wrap gap-4">
-      {skills.map(({ icon: Icon, name }) => (
-        <div
-          key={name}
-          className="flex flex-col items-center gap-2 rounded-full border-2 border-[#8a6d3b] bg-[#2a1f17] p-4 text-[#d4af6a]"
-        >
-          <Icon size={28} />
-          <span className="text-xs uppercase tracking-wide">{name}</span>
-        </div>
-      ))}
-    </div>
+    <section id="skills">
+      <h2 className="skillsHeading">Tecnologias</h2>
+
+      <div className="skills">
+        {skills.map(({ icon: Icon, name }) => (
+          <div key={name} className="badge">
+            <Icon size={28} />
+            <span className="name">{name}</span>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }

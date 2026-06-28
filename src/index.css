@@ -1,1 +1,29 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Ultra&family=Bitter:wght@400;500&display=swap");
+
+:root {
+  --bg-dark: #1c1410;
+  --bg-card: #241a12;
+
+  --border-wood: #4a3a28;
+  --border-wood-light: #6b5636;
+
+  --text-gold: #f0dcc0;
+  --text-tan: #d9b97a;
+  --text-muted: #b8a583;
+  --text-faint: #7a6a4d;
+
+  --accent-rust: #7a3b22;
+  --accent-rust-light: #993c1d;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-gold);
+  font-family: var(--font-body, "Bitter", serif);
+}
+
+@theme {
+  --font-display: "Ultra", serif;
+  --font-sans: "Bitter", serif;
+}

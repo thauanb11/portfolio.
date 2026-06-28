@@ -1,0 +1,50 @@
+.skillsHeading {
+  font-family: var(--font-display);
+  color: var(--text-tan);
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0.5rem;
+  border-radius: 8px;
+  color: var(--text-tan);
+  transition:
+    background-color 0.25s ease,
+    transform 0.2s ease;
+}
+
+.badge:hover {
+  background-color: var(--bg-card);
+  transform: translateY(-3px);
+}
+
+.name {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
